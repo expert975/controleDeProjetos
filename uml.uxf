@@ -239,6 +239,7 @@ m1=situacao
 --
 +getOrcamentoDeProjetos(): long
 +getProjetos(situacao: Situacao): Projeto [*]
++podeAdicionar(projeto: Projeto): boolean
 +toString(): String</panel_attributes>
     <additional_attributes/>
   </element>
