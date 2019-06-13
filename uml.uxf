@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="13.3">
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
   <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
@@ -376,7 +375,7 @@ Encerrada</panel_attributes>
     </coordinates>
     <panel_attributes>Alocacao
 --
-cargaHoraria: int</panel_attributes>
++cargaHoraria: int</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
