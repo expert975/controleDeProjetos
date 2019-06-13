@@ -18,6 +18,7 @@ CLASSES = \
 	$(SOURCEPATH)/$(PACKAGE)/model/Projeto.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Endereco.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Sexo.java \
+	$(SOURCEPATH)/$(PACKAGE)/model/Alocacao.java \
 	$(SOURCEPATH)/Main.java
 
 default: compile
