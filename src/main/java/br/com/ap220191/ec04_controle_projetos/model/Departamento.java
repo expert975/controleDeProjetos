@@ -22,7 +22,7 @@ public class Departamento
 
 	public boolean removeColaborador(Colaborador colaborador)
 	{
-
+            colaboradores.remove(colaborador);
 	}
 
 	public long getOrcamentoDeProjetos()
