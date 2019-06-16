@@ -17,7 +17,7 @@ public class Departamento
 
 	public void addColaborador(Colaborador colaborador)
 	{
-
+            colaboradores.add(colaborador);
 	}
 
 	public void removeColaborador(Colaborador colaborador)
