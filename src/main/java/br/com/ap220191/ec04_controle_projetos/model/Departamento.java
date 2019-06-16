@@ -15,9 +15,9 @@ public class Departamento
 	private ArrayList<Colaborador> colaboradores;
 	private ArrayList<Projeto> projetos;
 
-	public boolean addColaborador(Colaborador colaborador)
+	public void addColaborador(Colaborador colaborador)
 	{
-
+            colaboradores.add(colaborador);
 	}
 
 	public boolean removeColaborador(Colaborador colaborador)
