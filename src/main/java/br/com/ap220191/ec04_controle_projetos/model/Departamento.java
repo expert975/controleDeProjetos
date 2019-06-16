@@ -17,10 +17,10 @@ public class Departamento
 
 	public void addColaborador(Colaborador colaborador)
 	{
-            colaboradores.add(colaborador);
+
 	}
 
-	public boolean removeColaborador(Colaborador colaborador)
+	public void removeColaborador(Colaborador colaborador)
 	{
 
 	}
