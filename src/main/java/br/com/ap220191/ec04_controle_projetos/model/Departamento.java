@@ -55,9 +55,9 @@ public class Departamento
 		return colaboradores;
 	}
 
-	public void setColaboradores(ArrayList<Colaborador> colaboradores)
+	public void setColaborador(Colaborador colaborador)
 	{
-		this.colaboradores = colaboradores;
+		colaboradores.add(colaborador);
 	}
 
 	public Gerente getGerente()
