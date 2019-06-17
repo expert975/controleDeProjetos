@@ -17,50 +17,50 @@ public class Departamento
 
 	public void addColaborador(Colaborador colaborador)
 	{
-            colaboradores.add(colaborador);
+		colaboradores.add(colaborador);
 	}
 
 	public void removeColaborador(Colaborador colaborador)
 	{
-            colaboradores.remove(colaborador);
+		colaboradores.remove(colaborador);
 	}
 
-        public void addProjeto(Projeto projeto)
-        {
-            this.projetos.add(projeto);
-        }
+	public void addProjeto(Projeto projeto)
+	{
+		this.projetos.add(projeto);
+	}
 
-        public void removeProjeto(Projeto projeto)
-        {
-            projetos.remove(projeto);
-        }
+	public void removeProjeto(Projeto projeto)
+	{
+		projetos.remove(projeto);
+	}
 
 	public long getOrcamentoDeProjetos()
-        {
-            long orcamentoProjetos = 0;
-            for (Projeto projeto : projetos)
-            {
-                orcamentoProjetos += projeto.getOrcamento();
-            }
-            return orcamentoProjetos;
+	{
+		long orcamentoProjetos = 0;
+		for (Projeto projeto : projetos)
+		{
+			orcamentoProjetos += projeto.getOrcamento();
+		}
+		return orcamentoProjetos;
 	}
 
 	public ArrayList<Projeto> getProjetos(Situacao situacao)
-        {
-            ArrayList<Projeto> projetosRetorno = new ArrayList<>();
-            for (Projeto projeto : projetos)
-            {
-                if (projeto.getSituacao().equals(situacao))
-                {
-                    projetosRetorno.add(projeto);
-                }
-            }
-            return projetosRetorno;
+	{
+		ArrayList<Projeto> projetosRetorno = new ArrayList<>();
+		for (Projeto projeto : projetos)
+		{
+			if (projeto.getSituacao().equals(situacao))
+			{
+				projetosRetorno.add(projeto);
+			}
+		}
+		return projetosRetorno;
 	}
 
 	public boolean podeAdicionar(Projeto projeto)
 	{
-            return projeto.getOrcamento() <= this.orcamento - getOrcamentoDeProjetos();
+		return projeto.getOrcamento() <= this.orcamento - getOrcamentoDeProjetos();
 	}
 
 	public void setProjetos(ArrayList<Projeto> projetos)
