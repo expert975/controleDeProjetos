@@ -168,7 +168,7 @@ r1=1</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>243</x>
-      <y>657</y>
+      <y>711</y>
       <w>189</w>
       <h>36</h>
     </coordinates>
@@ -182,10 +182,10 @@ r1=1</panel_attributes>
       <x>414</x>
       <y>567</y>
       <w>27</w>
-      <h>108</h>
+      <h>162</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -226,7 +226,7 @@ m1=situacao
       <x>0</x>
       <y>450</y>
       <w>369</w>
-      <h>189</h>
+      <h>225</h>
     </coordinates>
     <panel_attributes>Departamento
 --
@@ -236,6 +236,8 @@ m1=situacao
 +email: String
 +telefone: Telefone
 --
++addProjeto(Projeto: projeto)
++removeProjeto(Projeto: projeto)
 +getOrcamentoDeProjetos(): long
 +getProjetos(situacao: Situacao): Projeto [*]
 +addColaborador(colaborador: Colaborador)
@@ -316,14 +318,14 @@ r2=0..*</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>126</x>
-      <y>630</y>
+      <y>666</y>
       <w>135</w>
-      <h>63</h>
+      <h>81</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=gerente
 r1=1</panel_attributes>
-    <additional_attributes>130.0;50.0;10.0;10.0</additional_attributes>
+    <additional_attributes>130.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
