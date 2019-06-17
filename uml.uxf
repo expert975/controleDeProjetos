@@ -237,7 +237,7 @@ m1=situacao
 +telefone: Telefone
 --
 +addProjeto(Projeto: projeto)
-+removeColaborador(Projeto: projeto)
++removeProjeto(Projeto: projeto)
 +getOrcamentoDeProjetos(): long
 +getProjetos(situacao: Situacao): Projeto [*]
 +addColaborador(colaborador: Colaborador)
