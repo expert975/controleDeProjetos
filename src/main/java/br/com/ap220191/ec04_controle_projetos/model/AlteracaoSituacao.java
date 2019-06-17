@@ -73,12 +73,12 @@ public class AlteracaoSituacao
 	@Override
 	public String toString()
 	{
-		return "AlteracaoSituacao{" +
-			"data='" + data + "'" +
-			"motivo='" + motivo + "'" +
-			"agente='" + agente + "'" +
-			"anterior='" + anterior + "'" +
-			"novo='" + novo + "'" +
-			'}';
+		return "AlteracaoSituacao{"
+			+ "data='" + data + "'"
+			+ "motivo='" + motivo + "'"
+			+ "agente='" + agente + "'"
+			+ "anterior='" + anterior + "'"
+			+ "novo='" + novo + "'"
+			+ '}';
 	}
 }
