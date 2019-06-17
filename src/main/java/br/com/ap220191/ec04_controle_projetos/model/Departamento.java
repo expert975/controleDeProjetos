@@ -27,7 +27,7 @@ public class Departamento
 
 	public void addProjeto(Projeto projeto)
 	{
-		this.projetos.add(projeto);
+		projetos.add(projeto);
 	}
 
 	public void removeProjeto(Projeto projeto)
