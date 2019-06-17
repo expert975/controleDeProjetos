@@ -27,7 +27,7 @@ public class Departamento
 
 	public long getOrcamentoDeProjetos()
         {
-            int orcamentoProjetos = 0;
+            long orcamentoProjetos = 0;
             for (Projeto projeto : projetos)
             {
                 orcamentoProjetos += projeto.getOrcamento();
@@ -43,11 +43,6 @@ public class Departamento
 	public boolean podeAdicionar(Projeto projeto)
 	{
             return projeto.getOrcamento() <= this.orcamento - getOrcamentoDeProjetos();
-	}
-
-	public ArrayList<Projeto> getProjetos()
-	{
-		return projetos;
 	}
 
 	public void setProjetos(ArrayList<Projeto> projetos)
