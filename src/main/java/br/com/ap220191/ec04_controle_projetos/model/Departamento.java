@@ -29,6 +29,11 @@ public class Departamento
         {
             this.projetos.add(projeto);
         }
+        
+        public void removeProjeto(Projeto projeto)
+        {
+            projetos.remove(projeto);
+        }
 
 	public long getOrcamentoDeProjetos()
         {
