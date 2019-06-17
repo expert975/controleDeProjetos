@@ -60,7 +60,8 @@ public class Departamento
 
 	public boolean podeAdicionar(Projeto projeto)
 	{
-		return projeto.getOrcamento() <= this.orcamento - getOrcamentoDeProjetos();
+		return projeto.getOrcamento()
+			<= this.orcamento - getOrcamentoDeProjetos();
 	}
 
 	public void setProjetos(ArrayList<Projeto> projetos)
