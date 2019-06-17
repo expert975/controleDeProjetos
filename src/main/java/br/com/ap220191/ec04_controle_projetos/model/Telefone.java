@@ -38,10 +38,10 @@ public class Telefone {
 	@Override
 	public String toString()
 	{
-		return "Telefone{" +
-			"tipo='" + tipo + "'" +
-			", numero=" + numero +
-			", operadora='" + operadora + "'" +
-			'}';
+		return "Telefone{"
+			+ "tipo='" + tipo + "'"
+			+ ", numero=" + numero
+			+ ", operadora='" + operadora + "'"
+			+ '}';
 	}
 }
