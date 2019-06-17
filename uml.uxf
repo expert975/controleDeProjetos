@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="13.3">
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
   <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
@@ -239,8 +238,8 @@ m1=situacao
 --
 +getOrcamentoDeProjetos(): long
 +getProjetos(situacao: Situacao): Projeto [*]
-+addColaborador(colaborador: Colaborador): boolean
-+removeColaborador(colaborador: Colaborador): boolean
++addColaborador(colaborador: Colaborador)
++removeColaborador(colaborador: Colaborador)
 +podeAdicionar(projeto: Projeto): boolean
 +toString(): String</panel_attributes>
     <additional_attributes/>
