@@ -26,8 +26,13 @@ public class Departamento
 	}
 
 	public long getOrcamentoDeProjetos()
-	{
-
+        {
+            long orcamentoProjetos = 0;
+            for (Projeto projeto : projetos)
+            {
+                orcamentoProjetos += projeto.getOrcamento();
+            }
+            return orcamentoProjetos;
 	}
 
 	public ArrayList<Projeto> getProjetos(Situacao situacao)
