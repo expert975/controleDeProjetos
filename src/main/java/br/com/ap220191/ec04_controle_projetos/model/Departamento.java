@@ -35,7 +35,7 @@ public class Departamento
             return orcamentoProjetos;
 	}
 
-	public ArrayList<Projeto> getProjetos()
+	public ArrayList<Projeto> getProjetos(Situacao situacao)
         {
             return this.projetos;
 	}
@@ -45,9 +45,9 @@ public class Departamento
             return projeto.getOrcamento() <= this.orcamento - getOrcamentoDeProjetos();
 	}
 
-	public void setProjeto(Projeto projeto)
+	public void setProjetos(ArrayList<Projeto> projetos)
 	{
-		projetos.add(projeto);
+		this.projetos = projetos;
 	}
 
 	public ArrayList<Colaborador> getColaboradores()
@@ -55,9 +55,9 @@ public class Departamento
 		return colaboradores;
 	}
 
-	public void setColaborador(Colaborador colaborador)
+	public void setColaboradores(ArrayList<Colaborador> colaboradores)
 	{
-		colaboradores.add(colaborador);
+		this.colaboradores = colaboradores;
 	}
 
 	public Gerente getGerente()
