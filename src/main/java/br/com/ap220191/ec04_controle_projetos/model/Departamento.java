@@ -37,7 +37,15 @@ public class Departamento
 
 	public ArrayList<Projeto> getProjetos(Situacao situacao)
         {
-            return this.projetos;
+            ArrayList<Projeto> projetosRetorno = new ArrayList<>();
+            for (Projeto projeto : projetos)
+            {
+                if (projeto.getSituacao().equals(situacao))
+                {
+                    projetosRetorno.add(projeto);
+                }
+            }
+            return projetosRetorno;
 	}
 
 	public boolean podeAdicionar(Projeto projeto)
