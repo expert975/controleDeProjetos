@@ -97,7 +97,7 @@ public class Endereco
 		return "Endereco{"
 			+ "tipo='" + tipo + "'"
 			+ ", nome='" + nome + "'"
-			+ ", numero='" + numero "'"
+			+ ", numero='" + numero + "'"
 			+ ", complemento='" + complemento + "'"
 			+ ", bairro='" + bairro + "'"
 			+ ", cep='" + cep + "'"

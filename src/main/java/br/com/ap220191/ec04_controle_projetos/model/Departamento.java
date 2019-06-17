@@ -3,7 +3,6 @@ package br.com.ap220191.ec04_controle_projetos.model;
 import java.util.Date;
 import java.util.ArrayList;
 
-//TODO: implementar métodos
 public class Departamento
 {
 	private String nome;
