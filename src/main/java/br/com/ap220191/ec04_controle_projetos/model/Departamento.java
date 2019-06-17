@@ -4,7 +4,8 @@ import java.util.Date;
 import java.util.ArrayList;
 
 //TODO: implementar métodos
-public class Departamento{
+public class Departamento
+{
 	private String nome;
 	private String descricao;
 	private long orcamento;
@@ -24,22 +25,24 @@ public class Departamento{
             colaboradores.remove(colaborador);
 	}
 
-	public long getOrcamentoDeProjetos(){
-            this.orcamento = 0;
-            for(int i = 0; i < projetos.size(); i++){
-                this.orcamento += this.projetos.get(i).getOrcamento();
+	public long getOrcamentoDeProjetos()
+        {
+            int orcamentoProjetos = 0;
+            for (Projeto projeto : projetos)
+            {
+                orcamentoProjetos += projeto.getOrcamento();
             }
-            return this.orcamento;
+            return orcamentoProjetos;
 	}
 
-	public ArrayList<Projeto> getProjetos(Situacao situacao)
-	{
-
+	public ArrayList<Projeto> getProjetos()
+        {
+            return this.projetos;
 	}
 
 	public boolean podeAdicionar(Projeto projeto)
 	{
-
+            
 	}
 
 	public ArrayList<Projeto> getProjetos()
