@@ -14,7 +14,7 @@ public class Projeto
 	private Departamento departamentoResponsavel;
 	private ArrayList<AlteracaoSituacao> historia;
 
-        public Projeto (String nome, Date inicio, Date conclusao, long orcamento, 
+        public Projeto (String nome, Date inicio, Date conclusao, long orcamento,
                 String descricao, Departamento departamentoResponsavel)
         {
             this.nome = nome;
@@ -25,7 +25,7 @@ public class Projeto
             this.descricao = descricao;
             this.departamentoResponsavel = departamentoResponsavel;
         }
-	
+
         public ArrayList<AlteracaoSituacao> getHistoria()
 	{
 		return historia;
