@@ -45,9 +45,9 @@ public class Departamento
             return projeto.getOrcamento() <= this.orcamento - getOrcamentoDeProjetos();
 	}
 
-	public void setProjetos(ArrayList<Projeto> projetos)
+	public void setProjeto(Projeto projeto)
 	{
-		this.projetos = projetos;
+		projetos.add(projeto);
 	}
 
 	public ArrayList<Colaborador> getColaboradores()
