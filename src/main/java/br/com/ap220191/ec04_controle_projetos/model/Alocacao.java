@@ -2,12 +2,9 @@ package br.com.ap220191.ec04_controle_projetos.model;
 
 public class Alocacao
 {
-
-//TODO: Classe incompleta, por favor, complementar a classe
-
 	private int cargaHoraria;
-	private EstadoAlocacao estadoAlocacao;
-	
+	private EstadoAlocacao estado;
+
 	public int getCargaHoraria()
 	{
 		return cargaHoraria;
@@ -17,23 +14,23 @@ public class Alocacao
 	{
 		this.cargaHoraria = cargaHoraria;
 	}
-	
-	public EstadoAlocacao getEstadoAlocacao()
+
+	public EstadoAlocacao getEstado()
 	{
-		return estadoAlocacao;
+		return estado;
 	}
 
-	public void setEstadoAlocacao(EstadoAlocacao estadoAlocacao)
+	public void setEstado(EstadoAlocacao estado)
 	{
-		this.estadoAlocacao = estadoAlocacao;
+		this.estado = estado;
 	}
-	
+
 	@Override
 	public String toString()
 	{
 		return "Alocacao{"
 			+ "cargaHoraria=" + cargaHoraria
-			+ ", estadoAlocacao='" + estadoAlocacao  + "'"
+			+ ", estado='" + estado  + "'"
 			+ '}';
 	}
 }
