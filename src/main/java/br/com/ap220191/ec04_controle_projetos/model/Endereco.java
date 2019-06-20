@@ -94,6 +94,11 @@ public class Endereco
 		this.estado = estado;
 	}
 
+	public void addEndereco(Endereco endereco)
+	{
+		enderecosConhecidos.add(endereco);
+	}
+
 	@Override
 	public String toString()
 	{
