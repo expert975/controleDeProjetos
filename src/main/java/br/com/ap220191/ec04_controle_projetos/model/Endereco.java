@@ -99,6 +99,11 @@ public class Endereco
 		enderecosConhecidos.add(endereco);
 	}
 
+	public ArrayList<Endereco> getEnderecos()
+	{
+		return enderecosConhecidos;
+	}
+
 	@Override
 	public String toString()
 	{
