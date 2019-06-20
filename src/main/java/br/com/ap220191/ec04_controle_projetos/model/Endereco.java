@@ -1,5 +1,7 @@
 package br.com.ap220191.ec04_controle_projetos.model;
 
+import java.util.ArrayList;
+
 public class Endereco
 {
 	private String tipo;
@@ -10,6 +12,7 @@ public class Endereco
 	private String cep;
 	private String cidade;
 	private String estado;
+	private ArrayList<Endereco> enderecosConhecidos;
 
 	public String getTipo()
 	{
