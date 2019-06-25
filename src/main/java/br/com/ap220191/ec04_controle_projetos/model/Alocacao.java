@@ -3,11 +3,11 @@ package br.com.ap220191.ec04_controle_projetos.model;
 public class Alocacao
 {
 
-	private int cargaHoraria;
-	private EstadoAlocacao estado;
-	private Colaborador colaborador;
-	private Projeto projeto;
+//TODO: Classe incompleta, por favor, complementar a classe
 
+	private int cargaHoraria;
+	private EstadoAlocacao estadoAlocacao;
+	
 	public int getCargaHoraria()
 	{
 		return cargaHoraria;
@@ -17,45 +17,23 @@ public class Alocacao
 	{
 		this.cargaHoraria = cargaHoraria;
 	}
-
-	public EstadoAlocacao getEstado()
+	
+	public EstadoAlocacao getEstadoAlocacao()
 	{
-		return estado;
+		return estadoAlocacao;
 	}
 
-	public void setEstado(EstadoAlocacao estado)
+	public void setEstadoAlocacao(EstadoAlocacao estadoAlocacao)
 	{
-		this.estado = estado;
+		this.estadoAlocacao = estadoAlocacao;
 	}
-
-	public Colaborador getColaborador()
-	{
-		return colaborador;
-	}
-
-	public void setColaborador(Colaborador colaborador)
-	{
-		this.colaborador = colaborador;
-	}
-
-	public Projeto getProjeto()
-	{
-		return projeto;
-	}
-
-	public void setProjeto()
-	{
-		this.projeto = projeto;
-	}
-
+	
 	@Override
 	public String toString()
 	{
 		return "Alocacao{"
 			+ "cargaHoraria=" + cargaHoraria
-			+ ", estado='" + estado + "'"
-			+ ", colaborador='" + colaborador + "'"
-			+ ", projeto='" + projeto + "'"
+			+ ", estadoAlocacao='" + estadoAlocacao  + "'"
 			+ '}';
 	}
 }
