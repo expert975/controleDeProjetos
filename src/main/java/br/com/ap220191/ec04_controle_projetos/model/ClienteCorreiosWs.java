@@ -37,7 +37,7 @@ public class ClienteCorreiosWs
 		/**
 		* Recupera a referência ao objeto Endereco sobre o cep informado
 		* @param cep String no formato 00000000 ou 00000-000
-		* @return instancia de br.com.ap220191.ec04_controle_projetos.model.Endereco
+		* @return instância de br.com.ap220191.ec04_controle_projetos.model.Endereco
 		*/
 		public Endereco buscaCepEndereco(String cep)
 		{
