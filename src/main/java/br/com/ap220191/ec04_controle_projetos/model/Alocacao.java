@@ -2,11 +2,19 @@ package br.com.ap220191.ec04_controle_projetos.model;
 
 public class Alocacao
 {
-
 	private int cargaHoraria;
 	private EstadoAlocacao estado;
 	private Colaborador colaborador;
 	private Projeto projeto;
+
+	public Alocacao(Projeto projeto, EstadoAlocacao estado,
+	                Colaborador colaborador, int cargaHoraria)
+	{
+		this.cargaHoraria = cargaHoraria;
+		this.estado = estado;
+		this.colaborador = colaborador;
+		this.projeto = projeto;
+	}
 
 	public int getCargaHoraria()
 	{

@@ -5,6 +5,13 @@ public class Telefone {
 	private String operadora;
 	private Mobilidade tipo;
 
+	public Telefone(String numero, String operadora, Mobilidade tipo)
+	{
+		this.numero = numero;
+		this.operadora = operadora;
+		this.tipo = tipo;
+	}
+
 	public String getNumero()
 	{
 		return numero;

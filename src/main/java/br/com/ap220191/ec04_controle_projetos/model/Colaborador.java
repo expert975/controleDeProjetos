@@ -15,6 +15,22 @@ public class Colaborador
 	private ArrayList<Telefone> telefones;
 	private ArrayList<Departamento> departamentos;
 
+	public Colaborador(String nome, String cpf, Sexo sexo, Date nascimento,
+	                   long remuneracao, String email, Endereco endereco,
+	                   ArrayList<Telefone> telefones,
+	                   ArrayList<Departamento> departamentos)
+	{
+		this.nome = nome;
+		this.cpf = cpf;
+		this.sexo = sexo;
+		this.nascimento = nascimento;
+		this.remuneracao = remuneracao;
+		this.email = email;
+		this.endereco = endereco;
+		this.telefones = telefones;
+		this.departamentos = departamentos;
+	}
+
 	public ArrayList<Departamento> getDepartamentos()
 	{
 		return departamentos;
