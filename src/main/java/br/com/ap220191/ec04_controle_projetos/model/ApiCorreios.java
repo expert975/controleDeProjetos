@@ -19,6 +19,17 @@ import org.xml.sax.SAXException;
 
 public class ApiCorreios
 {
+	private static ApiCorreios instance;
+
+	private ApiCorreios()
+	{}
+
+	public static ApiCorreios getInstance()
+	{
+		if(instance == null)
+			instance = new ApiCorreios();
+		return instance;
+	}
 	/**
 	* Recupera a referência ao objeto Endereco sobre o cep informado
 	* @param cep String no formato 00000000 ou 00000-000
