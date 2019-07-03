@@ -7,6 +7,7 @@ JC = javac
 	$(JC) $(JFLAGS) $*.java
 
 CLASSES = \
+	$(SOURCEPATH)/$(PACKAGE)/model/CorreiosException.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/ApiCorreios.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Telefone.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/EstadoAlocacao.java \
