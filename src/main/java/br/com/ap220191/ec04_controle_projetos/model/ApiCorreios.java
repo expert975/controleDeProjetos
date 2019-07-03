@@ -118,8 +118,6 @@ public class ApiCorreios
 	private Document leStringXml(String xml)
 		throws ParserConfigurationException, SAXException, IOException
 	{
-		System.out.println(xml.contains("<return>"));
-		System.out.println(xml);
 		if(xml.contains("<return>"))
 		{
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
