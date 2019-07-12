@@ -2,13 +2,21 @@ import br.com.ap220191.ec04_controle_projetos.model.*;
 
 import java.lang.Thread;
 import java.lang.InterruptedException;
+import java.util.ArrayList;
+import java.util.Date;
 
 public class Main
 {
 	public static void main(String args[])
 	{
-		System.out.println("Hello world");
 		ApiCorreios corr = ApiCorreios.getInstance();
+		//ADICIONA ARRAYLISTS
+		ArrayList<Telefone> telefones = new ArrayList<>();
+		ArrayList<Colaborador> colaboradores = new ArrayList<>();
+		ArrayList<Departamento> departamentos = new ArrayList<>();
+		ArrayList<Projeto> projetos = new ArrayList<>();
+		ArrayList<AlteracaoSituacao> historia = new ArrayList<>();
+		System.out.println("Hello world");
 		try
 		{
 			System.out.println(corr.buscaEndereco("74474101"));
