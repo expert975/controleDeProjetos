@@ -72,9 +72,9 @@ public class Projeto
 		return conclusao;
 	}
 
-	public void setConclusao(Date conclusao)
+	public void setConclusao(String conclusaoString)
 	{
-		this.conclusao = conclusao;
+		this.conclusao = conversor.converterStringToDate(conclusaoString);
 	}
 
 	public Date getInicio()
@@ -82,9 +82,9 @@ public class Projeto
 		return inicio;
 	}
 
-	public void setInicio(Date inicio)
+	public void setInicio(String inicioString)
 	{
-		this.inicio = inicio;
+		this.inicio = conversor.converterStringToDate(inicioString);;
 	}
 
 	public Situacao getSituacao()
@@ -92,9 +92,10 @@ public class Projeto
 		return situacao;
 	}
 
-	public void mudarSituacao(Situacao situacao, Date dataMudanca,
+	public void mudarSituacao(Situacao situacao, String dataMudancaString,
 	                          Colaborador agente, String motivo)
 	{
+                Date dataMudanca = conversor.converterStringToDate(dataMudancaString);
 		historia.add(new AlteracaoSituacao(this.situacao, situacao, dataMudanca,
 		                                   agente, motivo));
 		this.situacao = situacao;
