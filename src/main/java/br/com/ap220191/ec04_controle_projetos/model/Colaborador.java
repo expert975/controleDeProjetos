@@ -21,9 +21,9 @@ public class Colaborador
 		return departamentos;
 	}
 
-	public void setDepartamentos(ArrayList<Departamento> departamentos)
+	public void setDepartamentos(Departamento departamento)
 	{
-		this.departamentos = departamentos;
+		departamentos.add(departamento);
 	}
 
 	public ArrayList<Telefone> getTelefones()
