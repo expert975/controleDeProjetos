@@ -92,13 +92,14 @@ public class Projeto
 		return situacao;
 	}
 
-	public void mudarSituacao(Situacao situacao, String dataMudancaString,
-	                          Colaborador agente, String motivo)
+	public void mudarSituacao(Situacao anterior, Situacao atual,
+	                          String dataMudancaString, Colaborador agente, 
+                                  String motivo)
 	{
                 Date dataMudanca = conversor.converterStringToDate(dataMudancaString);
-		historia.add(new AlteracaoSituacao(this.situacao, situacao, dataMudanca,
+		historia.add(new AlteracaoSituacao(anterior, atual, dataMudanca,
 		                                   agente, motivo));
-		this.situacao = situacao;
+		this.situacao = atual;
 	}
 
 	public String getNome()
