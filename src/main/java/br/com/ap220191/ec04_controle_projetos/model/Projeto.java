@@ -114,14 +114,14 @@ public class Projeto
 	public String toString()
 	{
 		return "Projeto{"
-			+ "nome='" + nome + "'"
-			+ "situacao='" + situacao + "'"
-			+ "inicio='" + inicio + "'"
-			+ "conclusao='" + conclusao + "'"
-			+ "orcamento='" + orcamento + "'"
-			+ "descricao='" + descricao + "'"
-			+ "departamentoResponsavel='" + departamentoResponsavel + "'"
-			+ "historia='" + historia + "'"
-			+ "}";
+			+ "\nnome='" + nome + "'"
+			+ "\nsituacao='" + situacao + "'"
+			+ "\ninicio='" + inicio + "'"
+			+ "\nconclusao='" + conclusao + "'"
+			+ "\norcamento='" + orcamento + "'"
+			+ "\ndescricao='" + descricao + "'"
+			+ "\ndepartamentoResponsavel='" + departamentoResponsavel.getNome() + "'"
+			+ "\nhistoria='" + historia + "'"
+			+ "\n}";
 	}
 }
