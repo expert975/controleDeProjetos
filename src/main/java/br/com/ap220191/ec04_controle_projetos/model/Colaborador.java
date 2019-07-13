@@ -20,12 +20,17 @@ public class Colaborador
 	{
 		return departamentos;
 	}
-
-	public void setDepartamentos(Departamento departamento)
+        
+        public void setDepartamentos(ArrayList<Departamento> departamentos)
 	{
-		departamentos.add(departamento);
+		this.departamentos = departamentos;
 	}
-
+        
+        public void setDepartamento(Departamento departamento)
+        {
+                departamentos.add(departamento);
+        }
+        
 	public ArrayList<Telefone> getTelefones()
 	{
 		return telefones;
