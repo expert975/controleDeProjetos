@@ -13,14 +13,15 @@ public class Projeto
 	private String descricao;
 	private Departamento departamentoResponsavel;
 	private ArrayList<AlteracaoSituacao> historia;
+        private ConversorData conversor = new ConversorData();
 
-	public Projeto (String nome, Date inicio, Date conclusao, long orcamento,
+	public Projeto (String nome, String inicio, String conclusao, long orcamento,
 	                String descricao, Departamento departamentoResponsavel)
 	{
 		this.nome = nome;
 		this.situacao = Situacao.ANDAMENTO;
-		this.inicio = inicio;
-		this.conclusao = conclusao;
+		this.inicio = conversor.converterStringToDate(inicio);
+		this.conclusao = conversor.converterStringToDate(conclusao);
 		this.orcamento = orcamento;
 		this.descricao = descricao;
 		this.departamentoResponsavel = departamentoResponsavel;
