@@ -14,6 +14,7 @@ public class Colaborador
 	private Endereco endereco;
 	private ArrayList<Telefone> telefones;
 	private ArrayList<Departamento> departamentos;
+        private ConversorData conversor = new ConversorData();
 
 	public ArrayList<Departamento> getDepartamentos()
 	{
@@ -70,9 +71,9 @@ public class Colaborador
 		return nascimento;
 	}
 
-	public void setNascimento(Date nascimento)
+	public void setNascimento(String nascimento)
 	{
-		this.nascimento = nascimento;
+		this.nascimento = conversor.converterStringToDate(nascimento);
 	}
 
 	public Sexo getSexo()
