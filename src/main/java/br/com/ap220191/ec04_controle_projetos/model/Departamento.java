@@ -14,7 +14,17 @@ public class Departamento
 	private ArrayList<Colaborador> colaboradores;
 	private ArrayList<Projeto> projetos;
 
-	public void addColaborador(Colaborador colaborador)
+	public Departamento (){}
+        public Departamento (String nome, String descricao, long orcamento,
+                             String email)
+        {
+            this.nome = nome;
+            this.descricao = descricao;
+            this.orcamento = orcamento;
+            this.email = email;
+        }
+        
+        public void addColaborador(Colaborador colaborador)
 	{
 		colaboradores.add(colaborador);
 	}
