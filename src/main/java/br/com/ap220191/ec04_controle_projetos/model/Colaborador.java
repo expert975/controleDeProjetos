@@ -26,9 +26,14 @@ public class Colaborador
 		this.departamentos = departamentos;
 	}
         
-        public void setDepartamento(Departamento departamento)
+        public void addDepartamento(Departamento departamento)
         {
                 departamentos.add(departamento);
+        }
+        
+        public void removeDepartamento(Departamento departamento)
+        {
+                departamentos.remove(departamento);
         }
         
 	public ArrayList<Telefone> getTelefones()
