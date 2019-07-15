@@ -76,7 +76,7 @@ public class AlteracaoSituacao
 		return "AlteracaoSituacao{"
 			+ "\n\tdata='" + data + "'"
 			+ "\n\tmotivo='" + motivo + "'"
-			+ "\n\tagente='" + agente + "'"
+			+ "\n\tagente='" + agente.getNome() + "'"
 			+ "\n\tanterior='" + anterior + "'"
 			+ "\n\tnovo='" + novo + "'"
 			+ '}';
