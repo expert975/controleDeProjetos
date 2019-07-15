@@ -39,16 +39,6 @@ public class Departamento
 		colaboradores.remove(colaborador);
 	}
 
-	public void addProjeto(Projeto projeto)
-	{
-		this.projetos.add(projeto);
-	}
-
-	public void removeProjeto(Projeto projeto)
-	{
-		projetos.remove(projeto);
-	}
-
 	public long getOrcamentoDeProjetos()
 	{
 		long orcamentoProjetos = 0;
@@ -76,6 +66,16 @@ public class Departamento
 	{
 		return projeto.getOrcamento()
 			<= this.orcamento - getOrcamentoDeProjetos();
+	}
+        
+        public void addProjeto(Projeto projeto)
+	{
+		if(podeAdicionar(projeto)) this.projetos.add(projeto);
+	}
+
+	public void removeProjeto(Projeto projeto)
+	{
+		projetos.remove(projeto);
 	}
 
 	public ArrayList<Projeto> getProjetos()
