@@ -34,11 +34,15 @@ public class Main {
                                     colaboradoresTI, projetosTI);            
         
         Projeto projeto1 = new Projeto("Automacao", dateInicio, dateConclusao, 4000l, "Automatizar", setorTecnologia);
-        Projeto projeto2 = new Projeto("Desvio de Verba", dateInicio, dateConclusao, 5000000l, "Balburdia", setorTecnologia);        
-        projeto1.mudarSituacao(Situacao.ATRASADO, mudanca, colaboradorTI, null);
+        setorTecnologia.addColaborador(projeto1, gerenteTI, 400);
+        
+        Projeto projeto2 = new Projeto("Desvio de Verba", dateInicio, dateConclusao, 5000000l, "Balburdia", setorTecnologia);  
+        setorTecnologia.addColaborador(projeto2, colaboradorTI, 350);
+        
         setorTecnologia.addProjeto(projeto1);
-        setorTecnologia.addProjeto(projeto2); //Não adiciona o projeto2 pq excede a verba
-        System.out.println(setorTecnologia.toString());
-        //System.out.println(projeto1.toString());
+        setorTecnologia.addProjeto(projeto2); //Não adiciona o projeto2 pq excede a verda !!
+        projeto1.mudarSituacao(Situacao.ATRASADO, mudanca, colaboradorTI, null);        
+        //System.out.println(projeto2.toString());
+        System.out.println(setorTecnologia.getProjetos(Situacao.ATRASADO));
     }
 }
