@@ -125,15 +125,15 @@ public class Colaborador
 	public String toString()
 	{
 		return "Colaborador{"
-			+ "nome='" + nome + "'"
-			+ "cpf='" + cpf + "'"
-			+ "sexo='" + sexo + "'"
-			+ "nascimento='" + nascimento + "'"
-			+ "remuneracao='" + remuneracao + "'"
-			+ "email='" + email + "'"
-			+ "endereco='" + endereco + "'"
-			+ "telefones='" + telefones + "'"
-			+ "departamentos='" + departamentos + "'"
+			+ "\n\tnome='" + nome + "'"
+			+ "\n\tcpf='" + cpf + "'"
+			+ "\n\tsexo='" + sexo + "'"
+			+ "\n\tnascimento='" + nascimento + "'"
+			+ "\n\tremuneracao='" + remuneracao + "'"
+			+ "\n\temail='" + email + "'"
+			+ "\n\tendereco='" + endereco + "'"
+			+ "\n\ttelefones='" + telefones + "'"
+			+ "\n\tdepartamentos='" + departamentos + "'"
 			+ "}";
 	}
 }
