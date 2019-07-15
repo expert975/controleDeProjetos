@@ -74,11 +74,11 @@ public class AlteracaoSituacao
 	public String toString()
 	{
 		return "AlteracaoSituacao{"
-			+ "data='" + data + "'"
-			+ "motivo='" + motivo + "'"
-			+ "agente='" + agente + "'"
-			+ "anterior='" + anterior + "'"
-			+ "novo='" + novo + "'"
+			+ "\ndata='" + data + "'"
+			+ "\nmotivo='" + motivo + "'"
+			+ "\nagente='" + agente + "'"
+			+ "\nanterior='" + anterior + "'"
+			+ "\nnovo='" + novo + "'"
 			+ '}';
 	}
 }

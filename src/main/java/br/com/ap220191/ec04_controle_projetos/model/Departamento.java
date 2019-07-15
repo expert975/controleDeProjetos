@@ -42,7 +42,6 @@ public class Departamento
 	public void addProjeto(Projeto projeto)
 	{
 		this.projetos.add(projeto);
-                this.orcamento = this.orcamento - projeto.getOrcamento();
 	}
 
 	public void removeProjeto(Projeto projeto)
@@ -163,14 +162,14 @@ public class Departamento
 	public String toString()
 	{
 		return "Departamento{"
-			+ "nome='" + nome + "'"
-			+ "descricao='" + descricao + "'"
-			+ "orcamento='" + orcamento + "'"
-			+ "email='" + email + "'"
-			+ "telefone='" + telefone + "'"
-			+ "gerente='" + gerente + "'"
-			+ "colaboradores='" + colaboradores + "'"
-			+ "projetos='" + projetos + "'"
+			+ "\nnome='" + nome + "'"
+			+ "\ndescricao='" + descricao + "'"
+			+ "\norcamento='" + orcamento + "'"
+			+ "\nemail='" + email + "'"
+			+ "\ntelefone='" + telefone + "'"
+			+ "\ngerente='" + gerente + "'"
+			+ "\ncolaboradores='" + colaboradores + "'"
+			+ "\nprojetos='" + projetos + "'"
 			+ "}";
 	}
 }
