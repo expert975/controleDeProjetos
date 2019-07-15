@@ -18,13 +18,17 @@ public class Projeto
 	               String descricao, Departamento departamentoResponsavel)
 	{
 		this.nome = nome;
-		this.situacao = Situacao.ANDAMENTO;
+		this.situacao = Situacao.PARALISADO;
 		this.inicio = inicio;
 		this.conclusao = conclusao;
 		this.orcamento = orcamento;
 		this.descricao = descricao;
 		this.departamentoResponsavel = departamentoResponsavel;
 	}
+        
+        public void iniciarProjeto(Projeto projeto){
+            projeto.situacao = Situacao.ANDAMENTO;
+        }
 
 	public ArrayList<AlteracaoSituacao> getHistoria()
 	{

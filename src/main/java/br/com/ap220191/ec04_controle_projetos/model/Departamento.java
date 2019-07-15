@@ -72,7 +72,11 @@ public class Departamento
         
         public void addProjeto(Projeto projeto)
 	{
-		if(podeAdicionar(projeto)) this.projetos.add(projeto);
+		if(podeAdicionar(projeto)) 
+                {    
+                    this.projetos.add(projeto);
+                    projeto.iniciarProjeto(projeto);
+                }
 	}
 
 	public void removeProjeto(Projeto projeto)
