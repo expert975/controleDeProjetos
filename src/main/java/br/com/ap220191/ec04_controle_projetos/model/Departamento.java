@@ -42,7 +42,6 @@ public class Departamento
 	public void addProjeto(Projeto projeto)
 	{
 		this.projetos.add(projeto);
-                this.orcamento = this.orcamento - projeto.getOrcamento();
 	}
 
 	public void removeProjeto(Projeto projeto)
