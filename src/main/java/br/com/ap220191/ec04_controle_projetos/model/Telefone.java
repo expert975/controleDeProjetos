@@ -46,9 +46,9 @@ public class Telefone {
 	public String toString()
 	{
 		return "Telefone{"
-			+ "\ntipo='" + tipo + "'"
-			+ "\nnumero=" + numero
-			+ "\noperadora='" + operadora + "'"
+			+ "\n\ttipo='" + tipo + "'"
+			+ "\n\tnumero=" + numero
+			+ "\n\toperadora='" + operadora + "'"
 			+ '}';
 	}
 }

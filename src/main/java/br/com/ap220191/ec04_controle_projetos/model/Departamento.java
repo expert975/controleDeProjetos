@@ -162,14 +162,14 @@ public class Departamento
 	public String toString()
 	{
 		return "Departamento{"
-			+ "\nnome='" + nome + "'"
-			+ "\ndescricao='" + descricao + "'"
-			+ "\norcamento='" + orcamento + "'"
-			+ "\nemail='" + email + "'"
-			+ "\ntelefone='" + telefone + "'"
-			+ "\ngerente='" + gerente + "'"
-			+ "\ncolaboradores='" + colaboradores + "'"
-			+ "\nprojetos='" + projetos + "'"
+			+ "\n\tnome='" + nome + "'"
+			+ "\n\tdescricao='" + descricao + "'"
+			+ "\n\torcamento='" + orcamento + "'"
+			+ "\n\temail='" + email + "'"
+			+ "\n\ttelefone='" + telefone.getNumero() + "'"
+			+ "\n\tgerente='" + gerente.getNome() + "'"
+			+ "\n\tcolaboradores='" + colaboradores + "'"
+			+ "\n\tprojetos='" + projetos + "'"
 			+ "}";
 	}
 }

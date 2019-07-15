@@ -113,14 +113,14 @@ public class Endereco
 	public String toString()
 	{
 		return "Endereco{"
-			+ "\ntipo='" + tipo + "'"
-			+ "\nnome='" + nome + "'"
-			+ "\nnumero='" + numero + "'"
-			+ "\ncomplemento='" + complemento + "'"
-			+ "\nbairro='" + bairro + "'"
-			+ "\ncep='" + cep + "'"
-			+ "\ncidade='" + cidade + "'"
-			+ "\nestado='" + estado + "'"
+			+ "\n\ttipo='" + tipo + "'"
+			+ "\n\tnome='" + nome + "'"
+			+ "\n\tnumero='" + numero + "'"
+			+ "\n\tcomplemento='" + complemento + "'"
+			+ "\n\tbairro='" + bairro + "'"
+			+ "\n\tcep='" + cep + "'"
+			+ "\n\tcidade='" + cidade + "'"
+			+ "\n\testado='" + estado + "'"
 			+ '}';
 	}
 }

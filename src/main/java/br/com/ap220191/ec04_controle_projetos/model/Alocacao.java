@@ -60,10 +60,10 @@ public class Alocacao
 	public String toString()
 	{
 		return "Alocacao{"
-			+ "\ncargaHoraria=" + cargaHoraria
-			+ "\nestado='" + estado + "'"
-			+ "\ncolaborador='" + colaborador + "'"
-			+ "\nprojeto='" + projeto + "'"
+			+ "\n\tcargaHoraria=" + cargaHoraria
+			+ "\n\testado='" + estado + "'"
+			+ "\n\tcolaborador='" + colaborador + "'"
+			+ "\n\tprojeto='" + projeto + "'"
 			+ '}';
 	}
 }
