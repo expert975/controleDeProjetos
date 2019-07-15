@@ -29,14 +29,16 @@ public class Departamento
 		this.projetos = projetos;
 	}
 
-	public void addColaborador(Colaborador colaborador)
-	{
-		colaboradores.add(colaborador);
-	}
+	public void addColaborador(Projeto p, Colaborador c, int cargaH){
+            Alocacao alocacao = new Alocacao(p, EstadoAlocacao.ATIVO, c, cargaH);
+            colaboradores.add(c);
+            
+        }
 
-	public void removeColaborador(Colaborador colaborador)
+	public void removeColaborador(Projeto p, Colaborador c)
 	{
-		colaboradores.remove(colaborador);
+                Alocacao alocacao = new Alocacao(p, EstadoAlocacao.ENCERRADO, c, 0);
+		colaboradores.remove(c);
 	}
 
 	public long getOrcamentoDeProjetos()
