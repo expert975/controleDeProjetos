@@ -41,12 +41,12 @@ public class Colaborador
 		this.departamentos = departamentos;
 	}
         
-        public void addDepartamentos(Departamento departamento)
+        public void addDepartamento(Departamento departamento)
         {
             this.departamentos.add(departamento);
         }
         
-        public void removeDepartamentos(Departamento departamento)
+        public void removeDepartamento(Departamento departamento)
         {
             this.departamentos.remove(departamento);
         }
