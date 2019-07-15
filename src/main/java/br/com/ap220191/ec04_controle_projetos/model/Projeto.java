@@ -94,7 +94,8 @@ public class Projeto
 	public void mudarSituacao(Situacao situacao, Date dataMudanca,
 	                          Colaborador agente, String motivo)
 	{
-		historia.add(new AlteracaoSituacao(this.situacao, situacao, dataMudanca,
+		historia = new ArrayList<>();
+                historia.add(new AlteracaoSituacao(this.situacao, situacao, dataMudanca,
 		                                   agente, motivo));
 		this.situacao = situacao;
 	}
