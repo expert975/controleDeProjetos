@@ -119,7 +119,7 @@ public class Projeto
 			+ "\nconclusao='" + conclusao + "'"
 			+ "\norcamento='" + orcamento + "'"
 			+ "\ndescricao='" + descricao + "'"
-			+ "\ndepartamentoResponsavel='" + departamentoResponsavel + "'"
+			+ "\ndepartamentoResponsavel='" + departamentoResponsavel.getNome() + "'"
 			+ "\nhistoria='" + historia + "'"
 			+ "}";
 	}
