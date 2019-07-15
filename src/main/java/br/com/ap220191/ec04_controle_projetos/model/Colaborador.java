@@ -40,6 +40,16 @@ public class Colaborador
 	{
 		this.departamentos = departamentos;
 	}
+        
+        public void addDepartamentos(Departamento departamento)
+        {
+            this.departamentos.add(departamento);
+        }
+        
+        public void removeDepartamentos(Departamento departamento)
+        {
+            this.departamentos.remove(departamento);
+        }
 
 	public ArrayList<Telefone> getTelefones()
 	{
