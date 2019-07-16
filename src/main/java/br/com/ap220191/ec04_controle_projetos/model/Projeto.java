@@ -12,7 +12,7 @@ public class Projeto
 	private long orcamento;
 	private String descricao;
 	private Departamento departamentoResponsavel;
-	private ArrayList<AlteracaoSituacao> historia;
+	private ArrayList<AlteracaoSituacao> historia = new ArrayList<>();
 
 	public Projeto(String nome, Date inicio, Date conclusao, long orcamento,
 	               String descricao, Departamento departamentoResponsavel)
