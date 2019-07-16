@@ -17,16 +17,6 @@ public class Main
 	ArrayList<Projeto> projetosTI = new ArrayList<>();
 	ArrayList<AlteracaoSituacao> historia = new ArrayList<>();
 	System.out.println("Hello world");
-	try
-	    {
-		System.out.println(corr.buscaEndereco("74474101"));
-		System.out.println(corr.buscaEndereco("74474201"));
-		System.out.println(corr.buscaEndereco("74494201"));
-	    }
-	catch(CorreiosException e)
-	    {
-		e.printStackTrace();
-	    }
 	Endereco end1 = new Endereco();
 	Endereco end2 = new Endereco();
 	try
@@ -65,13 +55,13 @@ public class Main
         
         Projeto projeto2 = new Projeto("Desvio de Verba", dateInicio, dateConclusao, 5000000l, "Balburdia", setorTecnologia);
 	setorTecnologia.addColaborador(colaboradorTI);
+        
+        Projeto projeto3 = new Projeto("Desvio de Verba Profissional", dateInicio, dateConclusao, 350000l, "Balburdia", setorTecnologia);
+	setorTecnologia.addColaborador(colaboradorTI);
 
 	setorTecnologia.addProjeto(projeto1);
 	setorTecnologia.addProjeto(projeto2);
-        projeto1.mudarSituacao(Situacao.ATRASADO, mudanca, colaboradorTI, "Porque eu quis");     
-        System.out.println(setorTecnologia.getProjetos(Situacao.ATRASADO));
-	System.out.println(colaboradorTI.toString());
-	System.out.println(gerenteTI.toString());
-	System.out.println(telefoneTI.toString());
+        setorTecnologia.addProjeto(projeto3);
+        System.out.println(setorTecnologia.toString());
     }
 }
