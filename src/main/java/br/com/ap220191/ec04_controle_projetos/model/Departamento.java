@@ -67,12 +67,12 @@ public class Departamento
 		return projeto.getOrcamento()
 			<= this.orcamento - getOrcamentoDeProjetos();
 	}
-        
+
         public void addProjeto(Projeto projeto)
 	{
-		if(podeAdicionar(projeto)) {                    
-                    this.projetos.add(projeto);                    
-                }                
+		if(podeAdicionar(projeto)) {
+                    this.projetos.add(projeto);
+                }
 	}
 
 	public void removeProjeto(Projeto projeto)
