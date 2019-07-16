@@ -63,5 +63,9 @@ public class Main
 	setorTecnologia.addProjeto(projeto2);
         setorTecnologia.addProjeto(projeto3);
         System.out.println(setorTecnologia.toString());
+	System.out.println(projeto1.toString());
+	System.out.println(gerenteTI.toString());
+	System.out.println(colaboradorTI.toString());
+	System.out.println(projeto2.toString());
     }
 }
