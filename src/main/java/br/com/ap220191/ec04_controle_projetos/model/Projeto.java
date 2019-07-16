@@ -24,6 +24,7 @@ public class Projeto
 		this.orcamento = orcamento;
 		this.descricao = descricao;
 		this.departamentoResponsavel = departamentoResponsavel;
+		this.historia = new ArrayList<AlteracaoSituacao>();
 	}
 
 	public ArrayList<AlteracaoSituacao> getHistoria()
