@@ -37,6 +37,7 @@ public class Main
 		Telefone telefoneTI = new Telefone("12", "Embratel", Mobilidade.FIXO);
 		Telefone telefoneGerenteTI =
 			new Telefone("13", "Tim", Mobilidade.MOVEL);
+		telefonesGerenteTI.add(telefoneGerenteTI);
 
 		Gerente gerenteTI = new Gerente("Arthur", "XXXXXXXXX", Sexo.MASCULINO,
                                         nascimento, 4000l, "email", end1,
