@@ -11,6 +11,7 @@ public class Departamento
 	private String email;
 	private Telefone telefone;
 	private Gerente gerente;
+        private Alocacao alocacao;
 	private ArrayList<Colaborador> colaboradores;
 	private ArrayList<Projeto> projetos;
 
@@ -29,13 +30,16 @@ public class Departamento
 		this.projetos = projetos;
 	}
 
-	public void addColaborador(Colaborador colaborador)
+	public void addColaborador(Projeto projeto, Colaborador colaborador, int
+                                    cargaHoraria)
 	{
+                alocacao = new Alocacao(projeto, EstadoAlocacao.ATIVO, colaborador, cargaHoraria);
 		colaboradores.add(colaborador);
 	}
 
-	public void removeColaborador(Colaborador colaborador)
+	public void removeColaborador(Projeto projeto, Colaborador colaborador)
 	{
+                alocacao = new Alocacao(projeto, EstadoAlocacao.ENCERRADO, colaborador, 0);
 		colaboradores.remove(colaborador);
 	}
 
