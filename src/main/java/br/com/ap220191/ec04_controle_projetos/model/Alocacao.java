@@ -16,6 +16,9 @@ public class Alocacao
 		this.projeto = projeto;
 	}
 
+	public Alocacao() {
+	}
+
 	public int getCargaHoraria()
 	{
 		return cargaHoraria;
@@ -51,7 +54,7 @@ public class Alocacao
 		return projeto;
 	}
 
-	public void setProjeto()
+	public void setProjeto(Projeto projeto)
 	{
 		this.projeto = projeto;
 	}
