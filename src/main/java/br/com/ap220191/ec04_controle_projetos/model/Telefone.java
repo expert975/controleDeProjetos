@@ -12,6 +12,10 @@ public class Telefone {
 		this.tipo = tipo;
 	}
 
+	public Telefone()
+	{
+	}
+
 	public String getNumero()
 	{
 		return numero;
