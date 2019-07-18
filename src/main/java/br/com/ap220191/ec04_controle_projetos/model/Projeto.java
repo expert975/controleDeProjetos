@@ -24,7 +24,11 @@ public class Projeto
 		this.orcamento = orcamento;
 		this.descricao = descricao;
 		this.departamentoResponsavel = departamentoResponsavel;
-		this.historia = new ArrayList<AlteracaoSituacao>();
+	}
+
+	public Projeto() {
+		this.situacao = Situacao.ANDAMENTO;
+		historia = new ArrayList<>();
 	}
 
 	public ArrayList<AlteracaoSituacao> getHistoria()
@@ -92,13 +96,19 @@ public class Projeto
 		return situacao;
 	}
 
-	public void mudarSituacao(Situacao situacao, Date dataMudanca,
+	public void mudarSituacao(Situacao situacao, AlteracaoSituacao novaSituacao)
+	{	
+		this.situacao = situacao;
+		historia.add(novaSituacao);
+	}
+	
+	/*public void mudarSituacao(Situacao situacao, Date dataMudanca,
 	                          Colaborador agente, String motivo)
 	{
 		historia.add(new AlteracaoSituacao(this.situacao, situacao, dataMudanca,
 		                                   agente, motivo));
 		this.situacao = situacao;
-	}
+	}*/
 
 	public String getNome()
 	{
