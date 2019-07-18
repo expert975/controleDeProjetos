@@ -31,6 +31,10 @@ public class Colaborador
 		this.departamentos = departamentos;
 	}
 
+	public Colaborador()
+	{
+	}
+
 	public ArrayList<Departamento> getDepartamentos()
 	{
 		return departamentos;
