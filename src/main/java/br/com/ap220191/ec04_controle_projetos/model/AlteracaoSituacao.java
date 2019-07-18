@@ -20,6 +20,9 @@ public class AlteracaoSituacao
 		this.novo = novo;
 	}
 
+	public AlteracaoSituacao() {
+	}
+
 	public Colaborador getAgente()
 	{
 		return agente;
@@ -76,7 +79,8 @@ public class AlteracaoSituacao
 		return "AlteracaoSituacao{"
 			+ "\n\tdata='" + data + "'"
 			+ "\n\tmotivo='" + motivo + "'"
-			+ "\n\tagente='" + agente.getNome() + "'"
+			+ "\n\tagente='" + agente + "'"
+			//+ "\n\tagente='" + agente.getNome() + "'"
 			+ "\n\tanterior='" + anterior + "'"
 			+ "\n\tnovo='" + novo + "'"
 			+ '}';
