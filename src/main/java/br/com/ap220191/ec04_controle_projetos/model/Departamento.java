@@ -29,6 +29,10 @@ public class Departamento
 		this.projetos = projetos;
 	}
 
+	public Departamento()
+	{
+	}
+
 	public void addColaborador(Colaborador colaborador)
 	{
 		colaboradores.add(colaborador);
@@ -168,8 +172,10 @@ public class Departamento
 			+ "\n\tdescricao='" + descricao + "'"
 			+ "\n\torcamento='" + orcamento + "'"
 			+ "\n\temail='" + email + "'"
-			+ "\n\ttelefone='" + telefone.getNumero() + "'"
-			+ "\n\tgerente='" + gerente.getNome() + "'"
+			+ "\n\ttelefone='" + telefone + "'"
+			//+ "\n\ttelefone='" + telefone.getNumero() + "'"
+			//+ "\n\tgerente='" + gerente.getNome() + "'"
+			+ "\n\tgerente='" + gerente+ "'"
 			+ "\n\tcolaboradores='" + colaboradores + "'"
 			+ "\n\tprojetos='" + projetos + "'"
 			+ "}";
